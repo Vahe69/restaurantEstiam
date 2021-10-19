@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Nav from './Components/Header/Nav'
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import Footer from "./Components/Footer/Footer";
+import App from "./Components/Contenu/App";
+import styled from 'styled-components'
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <Nav /><br/><br/>
     <App />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
